@@ -20,4 +20,11 @@ export class AuthService {
   successFullLogin(authToken: string){
     localStorage.setItem('token', authToken);
   }
+
+  isAuthenticated(){
+    let token = localStorage.getItem('token')
+    if(token!=null){
+      
+    }
+  }
 }
